@@ -2,13 +2,27 @@
 <html>
 <head>
   <title>Laguazuma</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" %>
+  <%= stylesheet_link_tag "https://cdn.jsdelivr.net/lightgallery/1.3.7/css/lightgallery.min.css" %>
+  <%= javascript_include_tag "https://cdn.jsdelivr.net/g/lightgallery,lg-share,lg-thumbnail" %>
   <%= csrf_meta_tags %>
+  <%= metamagic %>
 </head>
 <body>
 
 <%= yield %>
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-90317567-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 
 </body>
 </html>
