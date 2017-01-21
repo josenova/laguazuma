@@ -8,7 +8,7 @@ $(document).ready(function() {
     	thumbnail:true
 	}); 
 
-	$("#gallery").lightGallery({
+	$("#gallery, .item-image").lightGallery({
 		thumbnail:false
 	}); 
 

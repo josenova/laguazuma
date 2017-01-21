@@ -10,6 +10,10 @@
 	font-family: 'Open Sans';
 }
 
+h1 {
+	font-size:0px;
+}
+
 h2 {
     text-align: center;
     margin: 5.5% 0 2.12%;
@@ -45,9 +49,6 @@ img {
 	
 	
 		#headline {
-		    color: #56778a;
-		    font-size: 52px;
-		    font-weight: 600;
 		    text-align: center;
 		    display: block;
 		    position: absolute;
@@ -56,9 +57,11 @@ img {
 		    padding: 2.12% 3.44%;
 		    transform: translateX(-50%);
 		    background: rgba(255,255,255,0.9);
-		    color:#182c4b;
-		    
-		    h1 {
+		    font-size: 52px;
+			font-weight: 600;
+			color:#182c4b;
+	
+		    span {
 		    	font-size:16px;
 		    	display: block;
 		    	margin-top:2.12%;
@@ -121,6 +124,10 @@ img {
 				&.right {
 					float:right;
 					margin: 0 0 0 3.44%;
+				}
+
+				img {
+					margin-top:-25px;
 				}
 			}
 

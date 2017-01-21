@@ -1,11 +1,10 @@
-- meta title: "Villa Paraíso, Las Galeras", description: "Villa Paraíso is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed as an ecolodge bungalow, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
+- meta title: "Villa Paraíso - Las Galeras, Dominican Republic", description: "Villa Paraíso is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed as an ecolodge bungalow, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
 
 #hero
   #overlay
+    %h1 Villa Paraíso - Bungalow rooms for rent in Las Galeras
     = video_tag ["3.mp4","3.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
-    #headline 
-      %p Welcome to Paradise
-      %h1 Villa for rent in Las Galeras, Dominican Republic
+    #headline Welcome to Paradise <span>Bungalow rooms for rent in Las Galeras, Dominican Republic</span>
 
 #content
 
@@ -13,14 +12,14 @@
 
     .item
       .item-image.left
-        = image_tag 'room-1.jpg'
+        = link_to image_tag("room-1.jpg", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("room-1.jpg")
       .item-description
         %h3.item-title A one-of-a-kind experience
         .item-text "Villa Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.
 
     .item
       .item-image.right
-        = image_tag 'hero.jpg'
+        = link_to image_tag("hero.jpg", alt: 'The view.'), asset_path("hero.jpg")
       .item-description
         %h3.item-title Immerse yourself in nature
         .item-text Surrounded by tropical gardens, a pond, birds, butterflies and overall amazing views, its a very special place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
