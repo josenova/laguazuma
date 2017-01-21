@@ -6,13 +6,19 @@
     = video_tag ["3.mp4","3.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
     #headline Welcome to Paradise <span>Bungalow rooms for rent in Las Galeras, Dominican Republic</span>
 
+    = link_to 'https://www.facebook.com/pg/CasaElParaisoRD/reviews/', id: 'reviews' do 
+      %p Facebook Reviews
+      = image_tag "icons/fb_stars.png", class: 'rating'
+      .total 30 Reviews
+      .review &ldquo;Spectacular place, surpassed only by the attentions of the hosts.&rdquo;
+
 #content
 
   #description.wrapper
 
     .item
       .item-image.left
-        = link_to image_tag("room-1.jpg", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("room-1.jpg")
+        = link_to image_tag("rooms/room-1.jpg", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.jpg")
       .item-description
         %h3.item-title A one-of-a-kind experience
         .item-text "Villa Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.
@@ -54,9 +60,9 @@
         .wrapper
           .room-number ##{r.number}
           .room-images
-            = link_to image_tag("room-#{r.number}.jpg", alt: ''), asset_path("room-#{r.number}.jpg")
-            = link_to image_tag("room-#{r.number}-view.jpg", alt: ''), asset_path("room-#{r.number}-view.jpg")
-            = link_to image_tag("room-#{r.number}-bathroom.jpg", alt: ''), asset_path("room-#{r.number}-bathroom.jpg")
+            = link_to image_tag("rooms/room-#{r.number}.jpg", alt: ''), asset_path("rooms/room-#{r.number}.jpg")
+            = link_to image_tag("rooms/room-#{r.number}-view.jpg", alt: ''), asset_path("rooms/room-#{r.number}-view.jpg")
+            = link_to image_tag("rooms/room-#{r.number}-bathroom.jpg", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.jpg")
           %ul.room-info
             %li 
               = image_tag('icons/guest.png')

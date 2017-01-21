@@ -46,6 +46,7 @@ img {
 		background: rgba(0,0,0,0.0);
 		height:100%;
 		width:100%;
+		position: relative;
 	
 	
 		#headline {
@@ -82,6 +83,46 @@ img {
 			  height: auto;
 			  z-index: -10; 
 			  overflow: hidden;    	
+		}
+
+		#reviews {
+			display: block;
+		    overflow: hidden;
+		    width: 286px;
+		    height: 110px;
+		    background:#fff;
+		    background: rgba(255,255,255,0.97);
+		    position: absolute;
+		    bottom: 12px;
+		    left: 10px;
+		    padding: 0.8% 1.3%;
+		    text-decoration: none;
+		    
+		    p {
+		    	color:#333;
+		    	font-weight:600;
+		    	font-size:14px;
+		    	margin-bottom:8px;
+		    }
+		    
+		    .rating {
+		    	width:133px;
+		    	float:left;
+		    }
+
+		    .total {
+		    	color: #777;
+			    font-size: 14px;
+			    left: 10px;
+			    position: relative;
+		    }
+
+		    .review {
+		    	color: #555;
+			    font-size: 13px;
+			    padding-top: 8px;
+			    font-style: italic;
+		    }
 		}
     }	
 }
