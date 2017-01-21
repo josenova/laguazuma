@@ -6,7 +6,7 @@
     = video_tag ["3.mp4","3.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
     #headline Welcome to Paradise <span>Bungalow rooms for rent in Las Galeras, Dominican Republic</span>
 
-    = link_to 'https://www.facebook.com/pg/CasaElParaisoRD/reviews/', id: 'reviews' do 
+    = link_to 'https://www.facebook.com/pg/CasaElParaisoRD/reviews/', id: 'reviews', target: "_blank" do 
       %p Facebook Reviews
       = image_tag "icons/fb_stars.png", class: 'rating'
       .total 30 Reviews
