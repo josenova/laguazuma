@@ -22,6 +22,13 @@ h2 {
     color:#182c4b;
 }
 
+h6 {
+	color:#333;
+	font-weight:600;
+	font-size:14px;
+	margin-bottom:8px;
+}
+
 img {
 	width:100%;
 }
@@ -57,7 +64,7 @@ img {
 		    left: 50%;
 		    padding: 2.12% 3.44%;
 		    transform: translateX(-50%);
-		    background: rgba(255,255,255,0.9);
+		    background: rgba(255,255,255,0.97);
 		    font-size: 52px;
 			font-weight: 600;
 			color:#182c4b;
@@ -85,25 +92,19 @@ img {
 			  overflow: hidden;    	
 		}
 
-		#reviews {
+		#facebook {
 			display: block;
 		    overflow: hidden;
 		    width: 286px;
 		    height: 110px;
-		    background:#fff;
-		    background: rgba(255,255,255,0.97);
+		    background-color:#fff;
+		    background-color: rgba(255,255,255,0.97);
 		    position: absolute;
 		    bottom: 12px;
 		    left: 10px;
 		    padding: 0.8% 1.3%;
 		    text-decoration: none;
 		    
-		    p {
-		    	color:#333;
-		    	font-weight:600;
-		    	font-size:14px;
-		    	margin-bottom:8px;
-		    }
 		    
 		    .rating {
 		    	width:133px;
@@ -123,6 +124,38 @@ img {
 			    padding-top: 8px;
 			    font-style: italic;
 		    }
+		}
+
+		#airbnb {
+			position: absolute;
+		    right: 10px;
+		    bottom: 10px;
+		    width: 286px;
+    		height: 110px;
+    		padding: 0.8% 1.3%;
+    		background-color:white;
+    		background-color:rgba(255,255,255,0.97);
+    		text-decoration: none;
+    		
+    		.rating {
+				width: 103px;
+				float: left;
+    		}
+
+    		.total {
+    			font-size: 12px;
+			    position: relative;
+			    left: 5px;
+			    color: #333;	
+    		}
+
+    		.review {
+    			clear: both;
+			    color: #555;
+			    font-size: 13px;
+			    font-style: italic;
+			    margin-top: 8px;
+    		}
 		}
     }	
 }
@@ -381,6 +414,14 @@ img {
 			    color: #444;
 			    padding:5.5%;
 			    text-align: justify;
+			    
+			    span {
+			    	
+
+			    	img {
+			    		width:100px;
+			    	}
+			    }
 
 			}
 		}
