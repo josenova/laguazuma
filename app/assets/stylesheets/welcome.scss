@@ -58,27 +58,29 @@ img {
 
 		#headline {
 			display: block;
-			text-align: center;
-			position: absolute;
-			top: 48%;
-			left: 50%;
-			padding: 0%;
-			transform: translateX(-50%);
-			font-size: 40px;
-			text-transform: uppercase;
-			font-weight: 300;
-			color: white;
-			width:442px;
-			border-bottom: 4px solid #de9000;
+	    text-align: center;
+	    position: absolute;
+	    top: 47%;
+	    left: 50%;
+	    padding: 0%;
+	    transform: translateX(-50%);
+	    font-size: 43px;
+	    text-transform: uppercase;
+	    font-weight: 300;
+	    color: white;
+	    width: 480px;
+	    border-bottom: 4px solid #de9000;
+	    white-space: nowrap;
 
 		    span {
-					font-size: 13px;
+					font-size: 14px;
 					display: block;
 					margin-top: 2.12%;
 					font-weight: 400;
 					color: #eee;
 					position: absolute;
-					padding-left: 2px;
+					white-space: nowrap;
+					width: 100%;
 		    }
     	}
 
@@ -129,19 +131,35 @@ img {
 			    font-style: italic;
 		    }
 		}
+  }
+}
 
-		#airbnb {
-				position: absolute;
-		    left: 40%;
-		    bottom: -54px;
-		    width: 286px;
-		    height: 110px;
-		    padding: 0.8% 1.3%;
-		    background-color: white;
-		    background-color: rgba(255, 255, 255, 0.90);
-		    text-decoration: none;
-		    z-index: 10;
-		    border: 1px solid #333;
+#airbnb {
+		position: absolute;
+		margin-top: -55px;
+		left: 50%;
+		width: 300px;
+		height: 110px;
+		padding: 0.8% 1.3%;
+		background-color: #f1f6fd;
+		text-decoration: none;
+		z-index: 10;
+		border: 1px solid #333;
+		border-radius: 2px;
+		transform: translateX(-50%) translateY(0%);
+		-webkit-transform: translateX(-50%) translateY(0%);
+
+				h6 {
+					text-align: center;
+				}
+
+				.score {
+					float: left;
+					color: #348288;
+					margin: 0 8px 0 30px;
+					position: relative;
+					font-size: 16px;
+				}
 
     		.rating {
 				width: 103px;
@@ -151,7 +169,7 @@ img {
     		.total {
     			font-size: 12px;
 			    position: relative;
-			    left: 5px;
+			    left: 8px;
 			    color: #333;
     		}
 
@@ -161,10 +179,10 @@ img {
 			    font-size: 13px;
 			    font-style: italic;
 			    margin-top: 8px;
+					text-align: center;
     		}
-		}
-    }
 }
+
 
 .wrapper {
 	width:1000px;
