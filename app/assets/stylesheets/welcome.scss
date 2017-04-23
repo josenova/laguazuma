@@ -279,7 +279,7 @@ img {
 	}
 
 
-	#rooms {
+	#rooms, #villa {
 
 		background: #eee;
 
@@ -350,6 +350,7 @@ img {
 		    line-height: 150px;
 		    width: 8%;
 		    text-align: center;
+				height:150px;
 		}
 
 		.room-images {
@@ -467,6 +468,22 @@ img {
 		    margin-top: 17px;
 		    font-weight: 600;
 		}
+	}
+
+	#big-group {
+		float: right;
+    margin: 6.9% 8% 0 0;
+		color: #666;
+    font-size: 15px;
+	}
+
+	#big-group a { color:#182c4b }
+
+	#villa .room { padding-bottom:3.14%; }
+
+	.home-away {
+		background: #2a6ebb !important;
+    margin-top: 7px !important;
 	}
 
 	#services {

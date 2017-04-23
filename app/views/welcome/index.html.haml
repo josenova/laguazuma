@@ -52,6 +52,9 @@
     .wrapper
       %h2 Rooms.
       %span Available for rent via Airbnb.
+      #big-group
+        Big group?
+        =link_to 'Rent the Villa', "#villa"
 
       = form_tag('/search', remote: true, id: 'availability') do
 
@@ -91,6 +94,37 @@
               = r.description
               /%span= image_tag "icons/airbnb_stars"
               = link_to 'Book now through Airbnb', "https://www.airbnb.com/rooms/#{r.airbnb_id}", class: 'book', target: '_blank'
+
+  #villa
+    .wrapper
+      %h2 Rent the Villa.
+      %span Ideal for big families or groups.
+
+      .room
+        .wrapper
+          .room-number
+          .room-images
+            = link_to image_tag("living-room-entrance.png", alt: 'Living room entrance.'), asset_path("living-room-entrance.png"), class: 'thumbnail'
+          %ul.room-info
+            %li
+              = image_tag('icons/guest.png')
+              15 guests
+            %li
+              = image_tag('icons/bed.png')
+              9 beds
+            %li
+              = image_tag('icons/size.png')
+              5700m<sup>2</sup>
+            %li
+              = image_tag('icons/bathroom.png')
+              7 bathrooms
+
+          .room-desc
+            %p
+              All five open-design bungalow rooms and one studio room with air conditioning to accomodate your whole group.
+              = link_to 'Book now through Airbnb', "https://www.airbnb.com/rooms/12092507", class: 'book', target: '_blank'
+              = link_to 'Book now through HomeAway', "https://www.homeaway.com/vacation-rental/p6568569", class: 'book home-away', target: '_blank'
+
 
   #services
     %h2 Additional Services
