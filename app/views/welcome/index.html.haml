@@ -1,8 +1,8 @@
-- meta description: "Villa Paraíso is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed as an ecolodge bungalow, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
+- meta description: "El Paraíso is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed as an ecolodge bungalow, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
 
 #hero
   #overlay
-    %h1 El Paraíso, Las Galeras | Official Page
+    %h1 Villa Paraíso® Official Page | Bungalow rooms for rent in Las Galeras
     = video_tag ["1.mp4","1.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
     #headline Welcome to Paradise <span>Bungalow rooms for rent in Las Galeras, Dominican Republic</span>
 
@@ -15,7 +15,7 @@
     = link_to 'https://www.airbnb.com/users/show/60995700', id: 'airbnb', target: "_blank" do
       %h6 Airbnb Rating
       = image_tag "icons/airbnb_stars.png", class: 'rating'
-      .total 42 Reviews
+      .total 100+ Reviews
       .review &ldquo;Pictures do no justice to this beautiful paradise. The views are spectacular...&rdquo;
 
 #content
@@ -24,17 +24,19 @@
 
     .item
       .item-image.left
-        = link_to image_tag("rooms/room-1.jpg", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.jpg")
+        = link_to image_tag("rooms/room-1.png", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.png")
       .item-description
         %h3.item-title A one-of-a-kind experience
-        .item-text "Villa Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.
+        .item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.
 
     .item
       .item-image.right
-        = link_to image_tag("hero.jpg", alt: 'The view.'), asset_path("hero.jpg")
+        = link_to image_tag("pool.png", alt: 'The pool with ocean-view.'), asset_path("pool.png")
       .item-description
         %h3.item-title Immerse yourself in nature
-        .item-text Surrounded by tropical gardens, a pond, birds, butterflies and overall amazing views, its a very special place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
+        .item-text Surrounded by tropical gardens and overall amazing views, its a very special place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
+
+
 
   #expand click images to expand
   #gallery
@@ -66,9 +68,9 @@
         .wrapper
           .room-number ##{r.number}
           .room-images
-            = link_to image_tag("rooms/room-#{r.number}.jpg", alt: ''), asset_path("rooms/room-#{r.number}.jpg")
-            = link_to image_tag("rooms/room-#{r.number}-view.jpg", alt: ''), asset_path("rooms/room-#{r.number}-view.jpg")
-            = link_to image_tag("rooms/room-#{r.number}-bathroom.jpg", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.jpg")
+            = link_to image_tag("rooms/room-#{r.number}.png", alt: ''), asset_path("rooms/room-#{r.number}.png")
+            = link_to image_tag("rooms/room-#{r.number}-view.png", alt: ''), asset_path("rooms/room-#{r.number}-view.png")
+            = link_to image_tag("rooms/room-#{r.number}-bathroom.png", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.png")
           %ul.room-info
             %li
               = image_tag('icons/guest.png')
