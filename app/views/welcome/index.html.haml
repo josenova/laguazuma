@@ -1,4 +1,4 @@
-- meta description: "El Paraíso is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed as an ecolodge bungalow, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
+- meta description: "El Paraíso is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed as an ecolodge bungalow, it's a one-of-a-kind way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
 
 #hero
   #overlay
@@ -6,7 +6,7 @@
     = video_tag ["1.mp4","1.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
     #headline Welcome to Paradise <span>Bungalow rooms for rent in Las Galeras, Dominican Republic</span>
 
-    = link_to 'https://www.facebook.com/pg/CasaElParaisoRD/reviews/', id: 'facebook', target: "_blank" do
+    -#= link_to 'https://www.facebook.com/pg/CasaElParaisoRD/reviews/', id: 'facebook', target: "_blank" do
       %h6 Facebook Rating
       = image_tag "icons/fb_stars.png", class: 'rating'
       .total 30 Reviews
@@ -27,7 +27,7 @@
         = link_to image_tag("rooms/room-1.png", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.png")
       .item-description
         %h3.item-title A one-of-a-kind experience
-        .item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's a truly one-of-a-kind way to experience the Dominican Republic and its natural beauty.
+        .item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's truly a one-of-a-kind way to experience the Dominican Republic and its natural beauty.
 
     .item
       .item-image.right
@@ -41,11 +41,11 @@
   #expand click images to expand
   #gallery
 
-    = link_to image_tag("living-room-entrance.jpg", alt: 'Living room entrance.'), asset_path("living-room-entrance.jpg"), class: 'thumbnail'
-    = link_to image_tag("dinner-table.jpg", alt: 'Dinner table.'), asset_path('dinner-table.jpg'), class: 'thumbnail'
-    = link_to image_tag("pool-pov.jpg", alt: 'Pool.'), asset_path('pool-pov.jpg'), class: 'thumbnail'
-    = link_to image_tag("poolside-bar.jpg", alt: 'Poolside bar.'), asset_path('poolside-bar.jpg'), class: 'thumbnail'
-    = link_to image_tag("poolside-area.jpg", alt: 'Poolside area.'), asset_path('poolside-area.jpg'), class: 'thumbnail'
+    = link_to image_tag("living-room-entrance.png", alt: 'Living room entrance.'), asset_path("living-room-entrance.png"), class: 'thumbnail'
+    = link_to image_tag("dinner-table.png", alt: 'Dinner table.'), asset_path('dinner-table.png'), class: 'thumbnail'
+    = link_to image_tag("pool-pov.png", alt: 'Pool.'), asset_path('pool-pov.png'), class: 'thumbnail'
+    = link_to image_tag("poolside-bar.png", alt: 'Poolside bar.'), asset_path('poolside-bar.png'), class: 'thumbnail'
+    = link_to image_tag("poolside-area.png", alt: 'Poolside area.'), asset_path('poolside-area.png'), class: 'thumbnail'
 
   #rooms
     .wrapper
