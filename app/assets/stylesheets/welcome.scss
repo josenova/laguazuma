@@ -148,6 +148,7 @@ img {
 		border-radius: 2px;
 		transform: translateX(-50%) translateY(0%);
 		-webkit-transform: translateX(-50%) translateY(0%);
+		cursor:pointer;
 
 				h6 {
 					text-align: center;
@@ -243,6 +244,7 @@ img {
 				color: #666;
     			font-weight: 300;
     			line-height: 1.5;
+					font-size: 16px;
 			}
 		}
 	}
