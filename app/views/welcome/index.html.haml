@@ -25,14 +25,14 @@
 
     .item
       .item-image.left
-        = link_to image_tag("rooms/room-1.png", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.png")
+        = link_to image_tag("rooms/room-1-thumb.png", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.png")
       .item-description
         %h3.item-title A one-of-a-kind experience
         %p.item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's truly a one-of-a-kind way to experience the Dominican Republic and its natural beauty.
 
     .item
       .item-image.right
-        = link_to image_tag("pool.png", alt: 'The pool with ocean-view.'), asset_path("pool.png")
+        = link_to image_tag("pool-thumb.png", alt: 'The pool with ocean-view.'), asset_path("pool.png")
       .item-description
         %h3.item-title Immerse yourself in nature
         %p.item-text Surrounded by tropical gardens and overall amazing views, its a very special place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
@@ -42,11 +42,11 @@
   #expand click images to expand
   #gallery
 
-    = link_to image_tag("living-room-entrance.png", alt: 'Living room entrance.'), asset_path("living-room-entrance.png"), class: 'thumbnail'
-    = link_to image_tag("dinner-table.png", alt: 'Dinner table.'), asset_path('dinner-table.png'), class: 'thumbnail'
-    = link_to image_tag("pool-pov.png", alt: 'Pool.'), asset_path('pool-pov.png'), class: 'thumbnail'
-    = link_to image_tag("poolside-bar.png", alt: 'Poolside bar.'), asset_path('poolside-bar.png'), class: 'thumbnail'
-    = link_to image_tag("poolside-area.png", alt: 'Poolside area.'), asset_path('poolside-area.png'), class: 'thumbnail'
+    = link_to image_tag("living-room-entrance-thumb.png", alt: 'Living room entrance.'), asset_path("living-room-entrance.png"), class: 'thumbnail'
+    = link_to image_tag("dinner-table-thumb.png", alt: 'Dinner table.'), asset_path('dinner-table.png'), class: 'thumbnail'
+    = link_to image_tag("pool-pov-thumb.png", alt: 'Pool.'), asset_path('pool-pov.png'), class: 'thumbnail'
+    = link_to image_tag("poolside-bar-thumb.png", alt: 'Poolside bar.'), asset_path('poolside-bar.png'), class: 'thumbnail'
+    = link_to image_tag("poolside-area-thumb.png", alt: 'Poolside area.'), asset_path('poolside-area.png'), class: 'thumbnail'
 
   #rooms
     .wrapper
@@ -72,9 +72,9 @@
         .wrapper
           .room-number ##{r.number}
           .room-images
-            = link_to image_tag("rooms/room-#{r.number}.png", alt: ''), asset_path("rooms/room-#{r.number}.png")
-            = link_to image_tag("rooms/room-#{r.number}-view.png", alt: ''), asset_path("rooms/room-#{r.number}-view.png")
-            = link_to image_tag("rooms/room-#{r.number}-bathroom.png", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.png")
+            = link_to image_tag("rooms/room-#{r.number}-thumb.png", alt: ''), asset_path("rooms/room-#{r.number}.png")
+            = link_to image_tag("rooms/room-#{r.number}-view-thumb.png", alt: ''), asset_path("rooms/room-#{r.number}-view.png")
+            = link_to image_tag("rooms/room-#{r.number}-bathroom-thumb.png", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.png")
           %ul.room-info
             %li
               = image_tag('icons/guest.png')
