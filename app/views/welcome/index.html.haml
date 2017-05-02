@@ -25,7 +25,7 @@
 
     .item
       .item-image.left
-        = link_to image_tag("rooms/room-1-thumb.png", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.png")
+        = link_to image_tag("rooms/thumbnails/room-1.png", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.png")
       .item-description
         %h3.item-title A one-of-a-kind experience
         %p.item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's truly a one-of-a-kind way to experience the Dominican Republic and its natural beauty.
@@ -72,9 +72,9 @@
         .wrapper
           .room-number ##{r.number}
           .room-images
-            = link_to image_tag("rooms/room-#{r.number}-thumb.png", alt: ''), asset_path("rooms/room-#{r.number}.png")
-            = link_to image_tag("rooms/room-#{r.number}-view-thumb.png", alt: ''), asset_path("rooms/room-#{r.number}-view.png")
-            = link_to image_tag("rooms/room-#{r.number}-bathroom-thumb.png", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.png")
+            = link_to image_tag("rooms/thumbnails/room-#{r.number}.png", alt: ''), asset_path("rooms/room-#{r.number}.png")
+            = link_to image_tag("rooms/thumbnails/room-#{r.number}-view.png", alt: ''), asset_path("rooms/room-#{r.number}-view.png")
+            = link_to image_tag("rooms/thumbnails/room-#{r.number}-bathroom.png", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.png")
           %ul.room-info
             %li
               = image_tag('icons/guest.png')
@@ -104,7 +104,7 @@
         .wrapper
           .room-number
           .room-images
-            = link_to image_tag("living-room-entrance.png", alt: 'Living room entrance.'), asset_path("living-room-entrance.png"), class: 'thumbnail'
+            = link_to image_tag("living-room-entrance-thumb.png", alt: 'Living room entrance.'), asset_path("living-room-entrance.png"), class: 'thumbnail'
           %ul.room-info
             %li
               = image_tag('icons/guest.png')
