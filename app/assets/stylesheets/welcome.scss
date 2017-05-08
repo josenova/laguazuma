@@ -212,7 +212,7 @@ img {
 			overflow: hidden;
 
 			.item-image {
-				background:#666;
+				background:#fff;
 				max-width:382px;
 				display:block;
 				overflow:hidden;
@@ -361,29 +361,6 @@ img {
 				a:first-child {	display: block; }
 				a:nth-of-type(n+2) { display:none; }
 
-		    a:hover img {
-		    	 -moz-transform: scale(1.1);
-  				-webkit-transform: scale(1.1);
-  				transform: scale(1.1);
-		    }
-
-		    a:hover:after {
-		    	display: block;
-			    content: '';
-			    background: rgba(0, 0, 0, 0.3);
-			    height: 100%;
-			    width: 100%;
-			    position: absolute;
-			    top: 0;
-			    background:image-url('icons/zoom.png') center 63px no-repeat rgba(0,0,0,0.3);
-		    }
-
-		    img {
-		    	 -moz-transition: all 0.3s;
-  				-webkit-transition: all 0.3s;
-  				transition: all 0.3s;
-		    }
-
 
 		}
 
@@ -424,7 +401,6 @@ img {
 
 		.room-desc {
 			float:left;
-			height:150px;
 			text-align:center;
     	border-left: 1px solid #eee;
 
@@ -433,7 +409,6 @@ img {
 			    height: 100%;
 			    font-size: 12px;
 			    color: #444;
-			    padding:5.5%;
 			    text-align: justify;
 
 			    span {
@@ -578,6 +553,10 @@ iframe {border:0}
 			.room-desc {
 				width:100%;
 				background:#fff;
+				height:auto;
+
+				p { padding:3.44%; }
+
 			}
 
 		}
@@ -637,8 +616,33 @@ iframe {border:0}
 			}
 
 			.room-images {
+
 				width: 25%;
 				height: 150px;
+
+				a:hover img {
+		    	 -moz-transform: scale(1.1);
+  				-webkit-transform: scale(1.1);
+  				transform: scale(1.1);
+		    }
+
+		    a:hover:after {
+		    	display: block;
+			    content: '';
+			    background: rgba(0, 0, 0, 0.3);
+			    height: 100%;
+			    width: 100%;
+			    position: absolute;
+			    top: 0;
+			    background:image-url('icons/zoom.png') center 63px no-repeat rgba(0,0,0,0.3);
+		    }
+
+		    img {
+		    	 -moz-transition: all 0.3s;
+  				-webkit-transition: all 0.3s;
+  				transition: all 0.3s;
+		    }
+
 			}
 
 			.room-info {
@@ -648,6 +652,10 @@ iframe {border:0}
 			.room-desc {
 				width:37%;
 				background:#fbfbfb;
+				height:150px;
+
+				p { padding:5.5%; }
+
 			}
 
 		}
