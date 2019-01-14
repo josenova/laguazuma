@@ -123,8 +123,10 @@ img {
 		    	color: #555;
 			    font-size: 13px;
 			    padding-top: 8px;
-			    font-style: italic;
-		    }
+					font-style: italic;
+					cursor: pointer;
+				}
+				
 		}
   }
 }
@@ -176,7 +178,17 @@ img {
 			    font-style: italic;
 			    margin-top: 8px;
 					text-align: center;
-    		}
+					cursor: pointer;
+				}
+				
+				.more-reviews {
+					color: #666;
+					text-align: center;
+					text-decoration: underline;
+					cursor: pointer;
+					font-size: 14px;
+					margin-top: 12px;
+				}
 }
 
 
@@ -485,6 +497,12 @@ img {
 }
 
 iframe {border:0}
+
+#memories {
+	margin-top: 40px;
+	background:#fafafa;
+	height:100px;
+}
 
 /*.lg-sub-html {display: none;}*/
 
