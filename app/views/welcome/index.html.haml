@@ -6,23 +6,21 @@
     = video_tag ["samana.mp4","samana.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
     #headline Welcome to Paradise <span>Villa & Bungalow rooms for rent in the Dominican Republic</span>
 
-    -#= link_to 'https://www.facebook.com/pg/CasaElParaisoRD/reviews/', id: 'facebook', target: "_blank" do
-      %h6 Facebook Rating
-      = image_tag "icons/fb_stars.png", class: 'rating'
-      .total 30 Reviews
-      .review &ldquo;Spectacular place, surpassed only by the attentions of the hosts.&rdquo;
+#reviews
+  = link_to 'https://www.airbnb.com/users/show/60995700', id: 'airbnb', target: "_blank" do
+    %h6 Airbnb Rating
+    .score 5.0
+    = image_tag "icons/airbnb_stars.png", class: 'rating'
+    .total 300+ Reviews
+    .review &ldquo;Pictures do no justice to this beautiful paradise. The views are spectacular...&rdquo;
+    /.more-reviews see more reviews...
 
--#superhost
-  .airbnb-embed-frame{"data-city" => "Las Galeras, DR", "data-city-url" => "https://www.airbnb.com/s/Samana-Dominican-Republic", "data-eb" => "1492791693_hBWRevPnML2gUvkk", "data-embed-source-type" => "badge_center", "data-eu" => "KP/r+1jpmI64qAdpp5jVj2fNRRRvvR76LlzlobYM4kepBYTY4IItDIXwXe1z h0g2zDGxpVTWOTJgyyvKMeCFnTLbHBUGQGsUB0zyxpIHQxV1/lRbuZRhysP+ kGy4AkAuMISoQTUK5V3JaqyCRE/IjbBTsz3++XJ4af4LTe//eiAUShrL/ukR YKn3in9bgDHNoeK3ivBZXVNN1Do55rHywNY/Z0p/7F5STnx7M4SLPSPrp3SS zzB/BeFs3dm0v39Oxap3io8IWcwG+DJt1ikRTFQ4zYILkzVFUGyIcHLHont/ bPvLw1/DYYeWaFtHm9TWeKJOfEEFj/9o5nfwbAxHxg== ", "data-trigger-source-type" => "badge_center", "data-user-id" => "60995700", "data-view" => "superhost_button", :style => "margin:auto;height:85px;"}
-  %script{:async => "", :src => "https://www.airbnb.com/embeddable/airbnb_jssdk"}
+  = link_to 'https://www.lonelyplanet.com/dominican-republic/las-galeras/hotels/casa-el-paraiso/a/lod/e2779545-1004-4c8f-92ee-968b21cc34c8/358033', id: 'lonely-planet', target: "_blank" do
+    %h6 
 
-= link_to 'https://www.airbnb.com/users/show/60995700', id: 'airbnb', target: "_blank" do
-  %h6 Airbnb Rating
-  .score 5.0
-  = image_tag "icons/airbnb_stars.png", class: 'rating'
-  .total 300+ Reviews
-  .review &ldquo;Pictures do no justice to this beautiful paradise. The views are spectacular...&rdquo;
-  .more-reviews see more reviews...
+  = link_to 'https://www.hoppingaroundtheglobeinstyle.com/paradise-found-bunnys-review-of-villa-paraiso-in-las-galeras-dominican-republic/', id: 'bunnys', target: "_blank" do
+    %h6 
+
 
 #content
 
@@ -150,6 +148,10 @@
       %iframe{:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1205829.7240267175!2d-69.89551042944235!3d19.250776892870743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a3d9ac3f3a6ec7f!2sCasa+El+Paraiso!5e0!3m2!1sen!2ses!4v1483461678445", :width => "100%", :height => "500", :frameborder => "0"}
 
 
-  #memories
+  #media
+    .wrapper 
+      %h2 Media
+      %iframe{:width => "100%", :height => "500", :src=> "https://www.youtube.com/embed/1oi4DoBWpTw", :frameborder=> "0", :allow=> "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"}
+      %p Credit: <a href="https://www.hoppingaroundtheglobeinstyle.com" target="_blank">https://www.hoppingaroundtheglobeinstyle.com</a>
 
 
