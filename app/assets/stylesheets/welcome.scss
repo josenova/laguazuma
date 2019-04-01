@@ -138,7 +138,7 @@ img {
 	display: flex;
 
 	& > a  {
-		width: 300px;
+		width: 22%;
 		display: block;
 		float:left;
 		height: 110px;
@@ -200,6 +200,11 @@ img {
 	
 	#lonely-planet {
 		background:image-url('lonely-planet.png') center no-repeat #fff;
+		background-size: contain;
+	}
+
+	#house-beautiful {
+		background:image-url('house-beautiful.png') center no-repeat #fff;
 		background-size: contain;
 	}
 
