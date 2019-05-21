@@ -1,0 +1,20 @@
+.slide {
+
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &.first {
+    background:image-url('rooms/room-5-view.jpg') center;
+    background-size: cover;
+  }
+}

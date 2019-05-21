@@ -44,38 +44,77 @@ img {
 
 }
 
+header {
+	height: 100px;
+	width: 100%;
+	display: block;
+	padding: 0 5%;
+	background:image-url('blue-waves.png') repeat;
+	
+	img {
+		width: 309px;
+		padding: 30px 0;
+	}
+}
+
 #hero {
 	width:100%;
 	display:block;
 	overflow: hidden;
-
+	background:image-url('blue-waves.png') repeat;
 
 	#overlay {
 		height:100%;
-		width:100%;
+		width:90%;
+		margin: 0 5%;
 		position: relative;
 
+		#superhost {
+			background:image-url('logos/airbnb-superhost.png') center no-repeat;
+			width: 191px;
+			height: 52px;
+			position: absolute;
+			right: 4%;
+			top: 0;
+			z-index: 1;
+			background-size: cover;
+		}
 
 		#headline {
 			display: block;
-	    text-align: center;
-	    position: absolute;
-	    left: 50%;
-	    padding: 0%;
-	    transform: translateX(-50%);
-	    text-transform: uppercase;
-	    font-weight: 300;
-	    color: white;
-	    border-bottom: 4px solid #de9000;
-	    white-space: nowrap;
+			text-align: center;
+			position: absolute;
+			text-transform: uppercase;
+			white-space: nowrap;
+			background: rgba(255,255,255,0.95);
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 
-		    span {
+			  h1 {
+					color: #182c4b;
+					font-weight: 300;
+				}
+
+		    h2 {
 					display: block;
 					margin-top: 2.12%;
-					color: #eee;
-					position: absolute;
-					width: 100%;
-		    }
+					color: #689ba4;
+					font-weight: 300;
+				}
+				
+				#cta {
+					display: block;
+					margin: 0 auto;
+					width: 200px;
+					text-align: center;
+					padding: 2.12% 0 1.3%;
+					background: #FF5A5F;
+					color: #fff;
+					text-decoration: none;
+					border-bottom: 2px solid rgba(0,0,0,0.1);
+					margin-top: 17px;
+					font-weight: 600;
+					font-size: 15px;
+				}
     	}
 
     	video {
@@ -199,17 +238,17 @@ img {
 	}
 	
 	#lonely-planet {
-		background:image-url('lonely-planet.png') center no-repeat #fff;
+		background:image-url('logos/lonely-planet.png') center no-repeat #fff;
 		background-size: contain;
 	}
 
 	#house-beautiful {
-		background:image-url('house-beautiful.png') center no-repeat #fff;
+		background:image-url('logos/house-beautiful.png') center no-repeat #fff;
 		background-size: contain;
 	}
 
 	#bunnys {
-		background:image-url('bunnys.png') center no-repeat #fff;
+		background:image-url('logos/bunnys.png') center no-repeat #fff;
 		background-size: contain;
 	}
 }
@@ -527,7 +566,7 @@ iframe {border:0}
 #media {
 
 	padding: 3.4% 0;
-	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/wov.png");
+	background:image-url('blue-waves.png') repeat;
 
 	h2 {
 		margin-top:0;
@@ -545,18 +584,24 @@ iframe {border:0}
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 	#hero {
-		height: 180px;
+		height: 480px;
 
 		video {display: none;}
 
 		#overlay {background:#13233c;}
 
 		#headline {
-			top: 12%;
-			font-size: 26px;
+			top: 59%;
 			width:auto;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 3.44%;
 
-			span {
+			h1 {
+				font-size: 16px;
+			}
+
+			h2 {
 				font-size: 13px;
 				font-weight: 300;
 				white-space: normal;
@@ -650,11 +695,17 @@ iframe {border:0}
 		#overlay {background: rgba(0,0,0,0.3);}
 
 		#headline {
-			top: 47%;
-			font-size: 43px;
-			width:480px;
+			top: 38%;
+			width: 480px;
+			height: 180px;
+			left: 10%;
+			padding: 3.14%;
 
-			span {
+			h1 {
+				font-size: 23px;
+			}
+
+			h2 {
 				font-size: 14px;
 				font-weight: 400;
 				white-space: nowrap;

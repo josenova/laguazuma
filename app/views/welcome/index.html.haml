@@ -2,9 +2,18 @@
 
 #hero
   #overlay
-    %h1 Casa Paraíso® Official Page | Bungalow rooms for rent in Las Galeras
-    = video_tag ["samana.mp4","samana.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
-    #headline Welcome to Paradise <span>Villa & Bungalow rooms for rent in the Dominican Republic</span>
+    #superhost
+    .slide.first
+      #headline 
+        %h1 Villa & Bungalow rooms for rent
+        %h2 Las Galeras, Dominican Republic
+        = link_to 'See the rooms', "#rooms", id: 'cta'
+    .slide.second
+      = video_tag ["samana.mp4","samana.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
+    %button.w3-button.w3-display-left{ :onclick=> "plusDivs(-1)" }
+      &#10094;
+    %button.w3-button.w3-display-right{ :onclick=> "plusDivs(+1)"} 
+      &#10095;
 
 #reviews
   = link_to 'https://www.airbnb.com/users/show/60995700', id: 'airbnb', target: "_blank" do
@@ -31,7 +40,7 @@
 
     .item
       .item-image.left
-        = link_to image_tag("rooms/thumbnails/room-1.jpg", alt: 'Ocean-view bungalow rooms with no front walls.'), asset_path("rooms/room-1.jpg")
+        = link_to image_tag("rooms/thumbnails/room-1.jpg", alt: 'Ocean-view bungalow rooms for rent.'), asset_path("rooms/room-1.jpg")
       .item-description
         %h3.item-title A one-of-a-kind experience
         %p.item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's truly a one-of-a-kind way to experience the Dominican Republic and its natural beauty.
@@ -153,8 +162,8 @@
 
   #media
     .wrapper 
-      %h2 Media
-      %iframe{:width => "100%", :height => "500", :src=> "https://www.youtube.com/embed/1oi4DoBWpTw", :frameborder=> "0", :allow=> "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"}
-      %p Credit: <a href="https://www.hoppingaroundtheglobeinstyle.com" target="_blank">https://www.hoppingaroundtheglobeinstyle.com</a>
+      /%h2 Media
+      /%iframe{:width => "100%", :height => "500", :src=> "https://www.youtube.com/embed/1oi4DoBWpTw", :frameborder=> "0", :allow=> "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"}
+      /%p Credit: <a href="https://www.hoppingaroundtheglobeinstyle.com" target="_blank">https://www.hoppingaroundtheglobeinstyle.com</a>
 
 
