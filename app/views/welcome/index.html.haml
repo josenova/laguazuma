@@ -6,7 +6,9 @@
     .slide.first
       #headline 
         %h1 Villa & Bungalow rooms for rent
-        %h2 Las Galeras, Dominican Republic
+        %h2 
+          = image_tag 'icons/geo.png', alt: 'Las Galeras, Samana'
+          Las Galeras, Dominican Republic
         = link_to 'See the rooms', "#rooms", id: 'cta'
     .slide.second
       = video_tag ["samana.mp4","samana.ogv"], :controls => false, :autoplay => "autoplay", :loop => "loop", :preload => 'auto'
