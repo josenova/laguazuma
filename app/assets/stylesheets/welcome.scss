@@ -194,7 +194,6 @@ header {
 		z-index: 10;
 		border: 1px solid #ddd;
 		border-radius: 2px;
-		cursor:pointer;
 		margin-right:3.44%;
 	}
 	
@@ -242,6 +241,11 @@ header {
 					font-size: 14px;
 					margin-top: 12px;
 				}
+	}
+
+	#marie-claire {
+		background:image-url('logos/marie-claire.png') center no-repeat #fff;
+		background-size: contain;
 	}
 	
 	#lonely-planet {
@@ -702,7 +706,7 @@ iframe {border:0}
 		#overlay {background: rgba(0,0,0,0.3);}
 
 		#headline {
-			top: 38%;
+			top: 36%;
 			width: 480px;
 			height: 180px;
 			left: 10%;
