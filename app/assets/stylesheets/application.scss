@@ -1,0 +1,134 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require jquery-ui
+ */
+
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+body {
+	background:image-url('white-waves.png') repeat;
+}
+
+h1 {
+	font-size:0px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    color:#182c4b;
+}
+
+h6 {
+	color:#333;
+	font-weight:600;
+	font-size:14px;
+	margin-bottom:8px;
+}
+
+img {
+	width:100%;
+}
+
+#content {
+	position: relative;
+	z-index:1;
+}
+
+.wrapper {
+	max-width:1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+
+
+#menu {
+    height: 88px;
+    float: right;
+		padding: 24px 0;
+		
+		a {
+			text-decoration: none;
+			height: 40px;
+			display: block;
+			line-height: 40px;
+			float: right;
+			text-align: center;
+			margin-left: 3.44%;
+			color: white;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 600;
+			border: 1px solid white;
+			border-radius: 3px;
+			padding: 0 2.12%;
+		}
+}
+
+header {
+	height: 88px;
+	width: 100%;
+	display: block;
+	padding: 0 5%;
+	background:image-url('blue-waves.png') repeat;
+	
+	a {
+		display: inline-block;
+		width: 309px;
+		height:88px;
+
+	img {
+		width: 309px;
+		padding: 24px 0;
+		}
+
+	}
+}
+
+/******************************************** SMALL SCREEN ****************************************/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+	body {
+	
+		header {
+			height:176px;
+	
+			#menu {
+				float:none;
+				width:100%;
+			}
+
+				a {
+					margin: 0 auto;
+					float:none;
+					text-align:center;
+					width:100%;
+				}
+			
+		}
+
+	}
+
+}

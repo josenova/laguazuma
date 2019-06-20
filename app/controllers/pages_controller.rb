@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 		@rooms = Room.all
 	end
 
+	def directions
+	end
+
 end

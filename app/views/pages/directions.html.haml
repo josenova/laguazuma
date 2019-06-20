@@ -1,0 +1,13 @@
+#content
+
+  #directions
+    %h2 Location
+
+    .wrapper
+      .left
+        #address
+          = image_tag('icons/location.png')
+          %p La Guazuma, Samana Province </br>Dominican Republic
+          = link_to 'Navigate in Google Maps', 'https://goo.gl/maps/UDwEjiMEHcaUvQ3v9', target: '_blank'
+      #map
+        %iframe{:src => "https://www.google.com/maps/d/u/0/embed?mid=1vyAEwNh31f9YBoQgJOhtW_D9HCzbGDVq", :width => "100%", :height => "400", :frameborder => "0"}
