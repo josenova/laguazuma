@@ -293,7 +293,7 @@
 
 	#rooms, #villa {
 
-		& > .wrapper { padding-top: 5.5% }
+		& > .wrapper { padding-top: 5.5%; padding-bottom: 2.12%; }
 
 		h2 {
 
@@ -353,16 +353,15 @@
 		}
 
 		.room-number {
-				font-size: 19px;
+				font-size: 18px;
 		    color: #fff;
-		    font-style: italic;
 		    line-height: 50px;
 		    width: 100%;
 		    text-align: left;
 				height:50px;
 				position: relative;
 				margin-top:-50px;
-				font-weight:300;
+				font-weight:bold;
 				padding-left: 3.44%;
 		}
 
@@ -454,6 +453,33 @@
 	}
 
 	#big-group a { color:#182c4b }
+
+	#parallax {
+		overflow: hidden;
+		height: 400px;
+		width: 100%;
+		position:relative;
+
+		span {
+			color: white;
+			font-size:30px;
+			position: absolute;
+			text-align: center;
+			line-height: 400px;
+			background-color: rgba(0,0,0,0.1);
+			width:100%;
+			display: block;
+			z-index: 10;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+			letter-spacing: 1px;
+		}
+
+		video {
+			transform: translateX(0%) translateY(-25%);
+		}
+	}
 
 	#villa .room { padding-bottom:3.14%; }
 
@@ -640,12 +666,28 @@ body {
 
 	}
 
+	#parallax {
+		display:none;
+	}
+
 	#services {display:none;}
 
 	#location {padding: 0 5.5% 5.5%;}
 
 	}
 }
+
+
+/****************************************** MEDIUM SCREEN *****************************************/
+
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+
+#content #parallax video {
+	transform: none;
+	}
+}
+
 /****************************************** LARGE SCREEN *****************************************/
 
 @media screen and (min-width: 768px) {
@@ -761,6 +803,8 @@ body {
 		}
 
 	}
+
+
 
 	#services {
 		display:block;

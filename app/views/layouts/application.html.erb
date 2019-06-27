@@ -15,7 +15,7 @@
 </head>
 <body>
   <header>
-    <div id="menu"><%= link_to 'Directions', directions_path %></div>
+    <div id="menu"><%= link_to 'Directions', directions_path, class: current_class?(directions_path) %></div>
     <%= link_to image_tag("el-paraiso.png", alt: 'Casa El Paraiso. Bungalow rooms for rent in Las Galeras'), '/' %>
   </header>
   <%= yield %>

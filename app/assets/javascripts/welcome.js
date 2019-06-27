@@ -12,7 +12,10 @@ $(document).ready(function() {
 		thumbnail:false
 	}); 
 
- 	$('.datepicker').datepicker({ dateFormat: 'dd-M-yy' });
+	 $('.datepicker').datepicker({ dateFormat: 'dd-M-yy' });
+
+	 this.querySelector('video').playbackRate = 0.7;
+	 
 
 });
 
@@ -33,5 +36,8 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block"; 
 }
+
+
+
 
 

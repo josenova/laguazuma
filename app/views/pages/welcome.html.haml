@@ -36,14 +36,14 @@
           = link_to image_tag("rooms/thumbnails/room-1.jpg", alt: 'Ocean-view bungalow rooms for rent.'), asset_path("rooms/room-1.jpg")
         .item-description
           %h3.item-title A one-of-a-kind experience
-          %p.item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking Samana Bay. Constructed from natural and local materials, it's truly a one-of-a-kind way to experience the Dominican Republic and its natural beauty.
+          %p.item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking beautiful Samana Bay. It offers private bungalow rooms perfect for couples and a series of activities nearby including zip lines, whale watching, diving and renowned beaches.
 
       .item
         .item-image.right
           = link_to image_tag("thumbnails/pool.jpg", alt: 'The pool with ocean-view.'), asset_path("pool.jpg")
         .item-description
           %h3.item-title Immerse yourself in nature
-          %p.item-text Surrounded by tropical gardens and overall amazing views, its a very special place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
+          %p.item-text Constructed from local materials that blends into the surrounding ecosystem, its a place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
 
 
 
@@ -105,7 +105,9 @@
                 = link_to 'Book now through Airbnb', "https://www.airbnb.com/rooms/#{r.airbnb_id}?s=67&shared_item_type=1&virality_entry_point=1", class: 'book', target: '_blank'
 
   #parallax
-  
+    %span Immerse yourself in nature
+    = video_tag ["parallax.mp4"], :controls => false, :muted => "muted", :autoplay => "autoplay", :loop => "loop", :preload => 'none', width: "100%", height: "auto"
+
   #villa
     .wrapper
       %div
