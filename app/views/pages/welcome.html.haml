@@ -58,11 +58,12 @@
 
   #rooms
     .wrapper
-      %h2 Rooms.
-      %span Available for rent via Airbnb.
-      #big-group
-        Big group?
-        =link_to 'Rent the Villa', "#villa"
+      %div
+        %h2 Rooms.
+        %span Available for rent via Airbnb.
+        #big-group
+          Big group?
+          =link_to 'Rent the Villa', "#villa"
 
       = form_tag('/search', remote: true, id: 'availability') do
 
@@ -75,37 +76,39 @@
 
         = submit_tag 'Search Dates', type: :submit
 
-      - @rooms.each do |r|
-        .room
-          .room-number ##{r.number}
-          .room-images
-            = link_to image_tag("rooms/thumbnails/room-#{r.number}.jpg", alt: ''), asset_path("rooms/room-#{r.number}.jpg")
-            = link_to image_tag("rooms/thumbnails/room-#{r.number}-view.jpg", alt: ''), asset_path("rooms/room-#{r.number}-view.jpg")
-            = link_to image_tag("rooms/thumbnails/room-#{r.number}-bathroom.jpg", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.jpg")
-          %ul.room-info
-            %li
-              = image_tag('icons/guest.png')
-              #{r.capacity} guests
-            %li
-              = image_tag('icons/bed.png')
-              #{r.beds} bed
-            %li
-              = image_tag('icons/size.png')
-              #{r.size}m<sup>2</sup>
-            %li
-              = image_tag('icons/bathroom.png')
-              #{r.bathrooms} bathroom
+      %ul
+        - @rooms.each do |r|
+          %li.room
+            .room-images
+              = link_to image_tag("rooms/thumbnails/room-#{r.number}.jpg", alt: ''), asset_path("rooms/room-#{r.number}.jpg")
+              = link_to image_tag("rooms/thumbnails/room-#{r.number}-view.jpg", alt: ''), asset_path("rooms/room-#{r.number}-view.jpg")
+              = link_to image_tag("rooms/thumbnails/room-#{r.number}-bathroom.jpg", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.jpg")
+            .room-number Room ##{r.number}
+            %ul.room-info
+              %li
+                = image_tag('icons/guest.png')
+                #{r.capacity} guests
+              %li
+                = image_tag('icons/bed.png')
+                #{r.beds} bed
+              %li
+                = image_tag('icons/size.png')
+                #{r.size}m<sup>2</sup>
+              %li
+                = image_tag('icons/bathroom.png')
+                #{r.bathrooms} bathroom
 
-          .room-desc
-            %p
-              = r.description
-              /%span= image_tag "icons/airbnb_stars"
-              = link_to 'Book now through Airbnb', "https://www.airbnb.com/rooms/#{r.airbnb_id}", class: 'book', target: '_blank'
+            .room-desc
+              %p
+                = r.description
+                /%span= image_tag "icons/airbnb_stars"
+                = link_to 'Book now through Airbnb', "https://www.airbnb.com/rooms/#{r.airbnb_id}?s=67&shared_item_type=1&virality_entry_point=1", class: 'book', target: '_blank'
 
   #villa
     .wrapper
-      %h2 Rent the Villa.
-      %span Ideal for big families or groups.
+      %div
+        %h2 Rent the Villa.
+        %span Ideal for big families or groups.
 
       .room
         .wrapper
