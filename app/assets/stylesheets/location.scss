@@ -68,11 +68,20 @@
         width: 93.12% !important;
         height: auto !important;
         margin: 3.44%;
+
+        #address {
+
+          a {
+            padding: 5.5% 0 3.44%;
+          }
+        }
       }
 
       #map {
         width:100%;
       }
+
+      
     }
 
   }
