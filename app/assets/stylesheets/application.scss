@@ -68,22 +68,23 @@ img {
     height: 88px;
     float: right;
 		padding: 24px 0;
+		width:300px;
 		
 		a {
 			text-decoration: none;
 			height: 40px;
-			display: block;
 			line-height: 40px;
-			float: right;
+			float: left;
 			text-align: center;
-			margin-left: 3.44%;
+			margin-left: 14px;
 			color: white;
 			font-size: 16px;
 			text-transform: uppercase;
 			font-weight: 600;
 			border: 1px solid white;
 			border-radius: 3px;
-			padding: 0 2.12%;
+			padding: 0 20px;
+			width: 136px;
 		}
 
 		a.active { display:none; }
@@ -116,19 +117,24 @@ header {
 	body {
 	
 		header {
-			height:176px;
+			height:auto;
 	
 			#menu {
 				float:none;
 				width:100%;
-			}
+				height: auto;
+				padding: 12px 0;
+
 
 				a {
-					margin: 0 auto;
+					margin: 2.12% auto;
 					float:none;
 					text-align:center;
 					width:100%;
+					display: block;
 				}
+
+			}
 			
 		}
 

@@ -1,0 +1,8 @@
+#content
+  #gallery
+    .wrapper
+      .masonry
+        - @images.each do |image|
+          - image = image.split('/').last
+          .item 
+            = link_to image_tag("gallery/#{image}", alt: image.split('.').first ), asset_path("gallery/#{image}"), class: 'thumbnail'

@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   root 'pages#welcome'
 
   # Example of regular route:
-  get '/location', to: 'pages#directions', as: 'directions'
+  get '/location', to: 'pages#location', as: 'location'
+  get '/gallery', to: 'pages#gallery', as: 'gallery'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

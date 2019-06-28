@@ -221,7 +221,7 @@
 		overflow: hidden;
 	}
 
-	#gallery {
+	#strip {
 
 		overflow:hidden;
 		width: 100%;
@@ -566,12 +566,12 @@ body {
 
 	}
 
-	#gallery .thumbnail {
+	#strip .thumbnail {
 		width: 24.8%;
 		margin:0.1%;
 	}
 
-	#gallery .thumbnail:last-child {display: none;}
+	#strip .thumbnail:last-child {display: none;}
 
 	#rooms, #villa {
 
@@ -683,7 +683,7 @@ body {
 
 	}
 
-	#gallery .thumbnail {
+	#strip .thumbnail {
 			width:19.9%;
 			margin:0.05%;
 	}

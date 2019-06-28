@@ -4,7 +4,11 @@ class PagesController < ApplicationController
 		@rooms = Room.all
 	end
 
-	def directions
+	def location
+	end
+
+	def gallery
+		@images = Dir.glob("app/assets/images/gallery/*.jpg")
 	end
 
 end
