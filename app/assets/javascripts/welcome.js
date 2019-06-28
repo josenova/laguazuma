@@ -4,15 +4,15 @@
 
 $(document).ready(function() {
 
-    $(".room-images").lightGallery({
-    	thumbnail:true
+  $(".room-images").lightGallery({
+    thumbnail:true
 	}); 
 
 	$("#gallery, .item-image").lightGallery({
 		thumbnail:false
 	}); 
 
-	 $('.datepicker').datepicker({ dateFormat: 'dd-M-yy' });
+	 // $('.datepicker').datepicker({ dateFormat: 'dd-M-yy' });
 
 	 this.querySelector('video').playbackRate = 0.7;
 	 
