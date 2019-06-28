@@ -688,6 +688,11 @@ body {
 	}
 }
 
+#content #description .item .item-text { letter-spacing: -0.2px;}
+
+#content #parallax { height:300px}
+#content #parallax span { line-height: 300px;}
+
 /****************************************** LARGE SCREEN *****************************************/
 
 @media screen and (min-width: 768px) {
