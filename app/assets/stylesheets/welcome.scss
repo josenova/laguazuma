@@ -148,52 +148,6 @@
 
 		
 	}
-	
-	#airbnb {
-
-				h6 {
-					text-align: center;
-				}
-
-				.score {
-					float: left;
-					color: #348288;
-					margin: 0 8px 0 30px;
-					position: relative;
-					font-size: 16px;
-				}
-
-    		.rating {
-				width: 103px;
-				float: left;
-    		}
-
-    		.total {
-    			font-size: 12px;
-			    position: relative;
-			    left: 8px;
-			    color: #333;
-    		}
-
-    		.review {
-    			clear: both;
-			    color: #555;
-			    font-size: 13px;
-			    font-style: italic;
-			    margin-top: 8px;
-					text-align: center;
-					cursor: pointer;
-				}
-				
-				.more-reviews {
-					color: #666;
-					text-align: center;
-					text-decoration: underline;
-					cursor: pointer;
-					font-size: 14px;
-					margin-top: 12px;
-				}
-	}
 
 	#marie-claire {
 		background:image-url('logos/marie-claire.png') center no-repeat #fff;
@@ -265,17 +219,6 @@
 	#images {
 
 		overflow: hidden;
-	}
-
-	#expand {
-		    text-align: center;
-		    font-style: italic;
-		    font-size: 13px;
-		    margin-bottom: 10px;
-		    color: #999;
-		    display:block;
-				background: #fff;
-				width: 100%;
 	}
 
 	#gallery {

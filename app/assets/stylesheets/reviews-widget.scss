@@ -1,10 +1,17 @@
 
-.eapps-widget {
-	margin-top:3.44%;
+.eaar-reviews-skeleton-container{
+
+  margin: 5.5% 0;
+
+  & > div:nth-of-type(3) {
+    display: none;
+  }
+
 }
 
-.eaar-reviews-skeleton-container {
-  & > div:nth-of-type(2) {
-    display: none;
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .eaar-reviews-skeleton-container {
+    margin: 5.5%;
   }
 }
