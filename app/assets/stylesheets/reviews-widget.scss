@@ -1,0 +1,10 @@
+
+.eapps-widget {
+	margin-top:2.12%;
+}
+
+.eaar-reviews-skeleton-container {
+  & > div:nth-of-type(2) {
+    display: none;
+  }
+}
