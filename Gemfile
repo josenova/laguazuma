@@ -42,7 +42,7 @@ gem 'jquery-ui-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'devise'
+# gem 'devise'
 
 gem 'haml-rails'
 
