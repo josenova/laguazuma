@@ -10,16 +10,23 @@
   <%= csrf_meta_tags %>
   <%= metamagic %>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="google-site-verification" content="JDx05ra1ffZaNraIv-5dPBWn_oz2a1QG4gNgUhQJL7k" />
 
 
 </head>
 <body>
   <header>
-    <div id="menu">
-      <%= link_to 'Home', root_path, class: current_class?(root_path) %>  
-      <%= link_to 'Gallery', gallery_path, class: current_class?(gallery_path) %>  
-      <%= link_to 'Location', location_path, class: current_class?(location_path) %>
+    <nav>
+      <label for="hamburger">&#9776; Menu</label>
+      <input type="checkbox" id="hamburger"/>
+
+    <ul>
+      <li><%= link_to 'Home', root_path, class: current_class?(root_path) %></li>
+      <li><%= link_to 'Gallery', gallery_path, class: current_class?(gallery_path) %></li>
+      <li><%= link_to 'Chef Mirko', chef_path, class: current_class?(chef_path) %></li> 
+      <li><%= link_to 'Location', location_path, class: current_class?(location_path) %></li>
     </div>
+    </nav>
     <%= link_to image_tag("el-paraiso.png", alt: 'Casa El Paraiso. Bungalow rooms for rent in Las Galeras'), '/' %>
   </header>
   <%= yield %>

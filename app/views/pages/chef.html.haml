@@ -1,0 +1,43 @@
+- meta description: "Chef Mirko Casagrande at Casa El Paraiso", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise mirko chef house)
+
+#content
+  #chef
+    .wrapper
+      .left
+        #mirko
+          %p Hi, Im Chef Mirko. 
+          %p I invite you to enjoy an unforgettable, rustic culinary experience @ El Paraiso. 
+          %p All of my dishes use high quality fresh ingredients, both local and imported.
+        #mirko-mentions
+          %h6 Mentions through Airbnb Reviews
+          .mention
+            .user
+              .photo
+                %img{:src=> "https://a0.muscache.com/im/pictures/d839dbbc-86fb-4249-a759-44d088096a5a.jpg?aki_policy=profile_x_medium"}
+              .name Sheridan
+            .text 
+              [...] I cannot recommend enough reserving a meal with Mirko. It was exceptional. We had a seafood pasta followed by grilled lobster and we could not believe how good it was. Treat yourself. 
+              .date July 2019
+          .mention
+            .user
+              .photo
+                %img{:src=> "https://a0.muscache.com/im/pictures/46d8a1c0-2001-4780-a797-5ef92e8fff09.jpg?aki_policy=profile_x_medium"}
+              .name  Natalie
+            .text 
+              [...] We also could try out the cooking abilities of Mirko. Yes he is an amazing cook so that we never went out for dinner. Thank Mirko for your outstanding angus beef. [...]
+              .date April 2019
+          .mention
+            .user
+              .photo
+                %img{:src=> "https://a0.muscache.com/im/pictures/user/d69dbadb-d813-450d-bc08-c5a32bc04092.jpg?aki_policy=profile_x_medium"}
+              .name  David
+            .text 
+              [...] We had the pleasure of having Chef Mirko cook dinner for us, and let me tell you, you must not pass up this opportunity. Food was delicious. [...]
+              .date February 2019
+      .right
+        .masonry
+          - @images.each do |image|
+            - image = image.split('/').last
+            .item 
+              = link_to image_tag("chef/#{image}", alt: image.split('.').first ), asset_path("chef/#{image}"), class: 'thumbnail'
+        

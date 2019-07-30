@@ -546,7 +546,17 @@ body {
 		
 	}
 
-	#reviews { display: none;}
+	#reviews { 
+
+		#lonely-planet {
+			width: 100%;
+			margin: 0;
+		}
+
+		#marie-claire, #house-beautiful, #bunnys {
+			display: none;
+		} 
+	}
 
 	#description .item {
 

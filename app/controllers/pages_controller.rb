@@ -11,4 +11,8 @@ class PagesController < ApplicationController
 		@images = Dir.glob("app/assets/images/gallery/*.jpg")
 	end
 
+	def chef
+		@images = Dir.glob("app/assets/images/chef/*.{jpg,jpeg}")
+	end
+
 end
