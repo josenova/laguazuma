@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 	end
 
 	def chef
-		@images = Dir.glob("app/assets/images/chef/*.{jpg,jpeg}")
+		@images = Dir.glob("app/assets/images/chef/*.jpg")
 	end
 
 end
