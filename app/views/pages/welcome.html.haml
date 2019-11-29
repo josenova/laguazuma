@@ -33,7 +33,7 @@
 
       .item
         .item-image.left
-          = link_to image_tag("rooms/thumbnails/room-1.jpg", alt: 'Ocean-view bungalow rooms for rent.'), asset_path("rooms/room-1.jpg")
+          = link_to image_tag("rooms/1/thumbnails/room-1.jpg", alt: 'Ocean-view bungalow rooms for rent.'), asset_path("rooms/room-1.jpg")
         .item-description
           %h3.item-title A one-of-a-kind experience
           %p.item-text "El Paraíso" is a rustic getaway situated atop cliffs overlooking beautiful Samana Bay. It offers private bungalow rooms perfect for couples with a series of activities nearby including zip lines, whale watching, diving and more.
@@ -83,9 +83,8 @@
         - @rooms.each do |r|
           %li.room
             .room-images
-              = link_to image_tag("rooms/thumbnails/room-#{r.number}.jpg", alt: ''), asset_path("rooms/room-#{r.number}.jpg")
-              = link_to image_tag("rooms/thumbnails/room-#{r.number}-view.jpg", alt: ''), asset_path("rooms/room-#{r.number}-view.jpg")
-              = link_to image_tag("rooms/thumbnails/room-#{r.number}-bathroom.jpg", alt: ''), asset_path("rooms/room-#{r.number}-bathroom.jpg")
+              = r.getImages.each do |image|
+                = link_to image_tag("rooms/#{r.number}/thumbnails/#{image}", alt: ''), asset_path("rooms/#{r.number}/#{image}")
             .room-number Room ##{r.number}
             %ul.room-info
               %li
