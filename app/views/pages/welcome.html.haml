@@ -83,8 +83,8 @@
         - @rooms.each do |r|
           %li.room
             .room-images
-              = r.getImages.each do |image|
-                = link_to image_tag("rooms/#{r.number}/thumbnails/#{image}", alt: ''), asset_path("rooms/#{r.number}/#{image}")
+              - r.getImages.each do |image|
+                = link_to image_tag("rooms/#{r.number}/thumbnails/#{image}.jpg", alt: ''), asset_path("rooms/#{r.number}/#{image}.jpg")
             .room-number Room ##{r.number}
             %ul.room-info
               %li
