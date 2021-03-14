@@ -86,6 +86,7 @@
               - r.getImages.each do |image|
                 = link_to image_tag("rooms/#{r.number}/thumbnails/#{image}.jpg", alt: ''), asset_path("rooms/#{r.number}/#{image}.jpg")
             .room-number Room ##{r.number}
+            .room-price USD $#{"%.2f" % r.price}
             %ul.room-info
               %li
                 = image_tag('icons/guest.png')

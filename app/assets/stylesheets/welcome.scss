@@ -722,6 +722,20 @@ body {
 			border-bottom: 1px solid rgba(0,0,0,0.05);
 			padding: 3.44% 0;
 
+			.room-price {
+				font-size: 14px;
+				color: #fff;
+				float: right;
+				line-height: 40px;
+				position: relative;
+				height: 40px;
+				margin-top: -45px;
+				font-weight: bold;
+				padding: 0 2.12%;
+				background: #58929b;
+				margin-right: 1.3%;
+			}
+
 			.room-images {
 
 				a:hover img {
