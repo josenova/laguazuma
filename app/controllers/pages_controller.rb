@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
 	def welcome
-		@rooms = Room.all
+		@rooms = Room.all.order(:number)
 	end
 
 	def location
