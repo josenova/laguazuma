@@ -16,10 +16,10 @@
     %button.w3-button.w3-display-right{ :onclick=> "plusDivs(+1)"} 
       &#10095;
 
-#reviews
+#articles
   = link_to '', 'https://www.marieclaire.com/travel/g27243755/airbnb-casa-el-paraiso-dominican-republic/?utm_medium=social-media&utm_source=facebook&utm_campaign=socialflowFBMAR', id: 'marie-claire', target: "_blank"
 
-  = link_to '', 'https://www.lonelyplanet.com/dominican-republic/las-galeras/hotels/casa-el-paraiso/a/lod/e2779545-1004-4c8f-92ee-968b21cc34c8/358033', id: 'lonely-planet', target: "_blank" 
+  = link_to '', 'https://www.lonelyplanet.com/dominican-republic/peninsula-de-samana/las-galeras/hotels/casa-el-paraiso/a/poi-sle/1559342/358033', id: 'lonely-planet', target: "_blank" 
 
   = link_to '', 'https://www.tourcert.org/en/services/check/', id: 'tour-cert', target: "_blank" 
 
@@ -48,7 +48,7 @@
   #airbnb-reviews
     .wrapper{ style: "position: relative"}
       %script{src:"https://apps.elfsight.com/p/platform.js", async:"true", defer:"true"}
-      %div.elfsight-app-4803f151-1145-49c3-b958-1b8c74bb88a7
+      %div.elfsight-app-02504cae-b997-4cbb-bb55-93f5a31367bd
       = link_to 'See all', 'https://www.airbnb.com/users/60995700/listings', target:'_blank'
 
   #strip
@@ -66,7 +66,7 @@
         %span Available for rent via Airbnb.
         #big-group
           Big group?
-          =link_to 'Rent the Villa', "#villa"
+          = link_to 'Rent the Villa', "https://www.airbnb.com/rooms/12092507?s=67&shared_item_type=1&virality_entry_point=1", target: '_blank'
 
       = form_tag('/search', remote: true, id: 'availability') do
 
@@ -110,37 +110,6 @@
   #parallax
     %span Immerse yourself in nature
     = video_tag ["parallax.mp4"], :controls => false, :muted => "muted", :autoplay => "autoplay", :loop => "loop", :preload => 'none', width: "100%", height: "auto"
-
-  #villa
-    .wrapper
-      %div
-        %h2 Rent the Villa.
-        %span Ideal for big families or groups.
-
-      .room
-        .wrapper
-          .room-number
-          .room-images
-            = link_to image_tag("thumbnails/living-room-entrance.jpg", alt: 'Living room entrance.'), asset_path("living-room-entrance.jpg"), class: 'thumbnail'
-          %ul.room-info
-            %li
-              = image_tag('icons/guest.png')
-              16 guests
-            %li
-              = image_tag('icons/bed.png')
-              8 beds
-            %li
-              = image_tag('icons/size.png')
-              5700m<sup>2</sup>
-            %li
-              = image_tag('icons/bathroom.png')
-              9 bathrooms
-
-          .room-desc
-            %p
-              All six open-design bungalow rooms and one air-conditioned room accomodate your whole group. Breakfast and housekeeping, security on the premises is provided.
-              = link_to 'Book now through Airbnb', "https://www.airbnb.com/rooms/12092507?s=67&shared_item_type=1&virality_entry_point=1", class: 'book', target: '_blank'
-
 
   #services
     /%h2 Additional Services
