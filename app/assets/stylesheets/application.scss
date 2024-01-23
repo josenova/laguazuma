@@ -90,7 +90,7 @@ nav {
 		li {
 			list-style: none;
 			display: inline-block;
-		
+
 			a {
 				text-decoration: none;
 				height: 40px;
@@ -118,8 +118,9 @@ header {
 	width: 100%;
 	display: block;
 	padding: 0 5%;
-	background:image-url('blue-waves.png') repeat;
-	
+	z-index: 999;
+	position: absolute;
+
 	a {
 		display: inline-block;
 		width: 309px;
@@ -138,10 +139,10 @@ header {
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 	body {
-	
+
 		header {
 			height:auto;
-	
+
 			nav {
 				float:none;
 				width:100%;
@@ -170,7 +171,7 @@ header {
 					}
 			}
 		}
-			
+
 	}
 
 	header nav input[type="checkbox"]:checked ~ ul {
@@ -179,6 +180,6 @@ header {
 
 	}
 
-	
+
 
 }

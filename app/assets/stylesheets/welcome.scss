@@ -12,20 +12,9 @@
 
 	#overlay {
 		height:100%;
-		width:90%;
-		margin: 0 5%;
+		width:100%;
+		margin: 0;
 		position: relative;
-
-		#superhost {
-			background:image-url('logos/airbnb-superhost.png') center no-repeat;
-			width: 191px;
-			height: 52px;
-			position: absolute;
-			right: 4%;
-			top: 0;
-			z-index: 1;
-			background-size: cover;
-		}
 
 		#headline {
 			display: block;
@@ -54,7 +43,7 @@
 						top: 2px;
 					}
 				}
-				
+
 				#cta {
 					display: block;
 					margin: 0 auto;
@@ -119,7 +108,7 @@
 					font-style: italic;
 					cursor: pointer;
 				}
-				
+
 		}
   }
 }
@@ -127,7 +116,8 @@
 #articles {
 
 	padding: 2.12%;
-	display: flex;
+	display:none;
+	//display: flex;
 
 	a:nth-of-type(4) {
 		margin-right: 0;
@@ -146,14 +136,14 @@
 		border-radius: 2px;
 		margin-right:4%;
 
-		
+
 	}
 
 	#marie-claire {
 		background:image-url('logos/marie-claire.png') center no-repeat #fff;
 		background-size: contain;
 	}
-	
+
 	#lonely-planet {
 		background:image-url('logos/lonely-planet.png') center no-repeat #fff;
 		background-size: contain;
@@ -191,7 +181,7 @@
 
 				a {
 					display: block;
-					height:200px;
+					height:240px;
 				}
 
 				img { margin-top:-25px; }
@@ -245,6 +235,7 @@
 		h2 {
 
 		    margin-bottom: 0;
+				text-decoration: underline;
 		}
 
 		span {
@@ -300,7 +291,7 @@
 		}
 
 		.room-number {
-				font-size: 18px;
+				font-size: 16px;
 		    color: #fff;
 		    line-height: 50px;
 		    width: 100%;
@@ -308,7 +299,7 @@
 				height:50px;
 				position: relative;
 				margin-top:-50px;
-				font-weight:bold;
+				font-weight:600;
 				padding-left: 3.44%;
 		}
 
@@ -495,13 +486,14 @@ iframe {border:0}
 
 #media {
 
+	display: none;
 	padding: 3.4% 0;
 	background:image-url('blue-waves.png') repeat;
 
 	h2 {
 		margin-top:0;
 	}
-	
+
 	p {
 		font-size:14px;
 	}
@@ -516,7 +508,6 @@ iframe {border:0}
 body {
 
 	#hero {
-		height: 500px;
 
 		video {display: none;}
 
@@ -525,11 +516,9 @@ body {
 			#superhost {
 				display: none;
 			}
-		
+
 			.slide {
 				height:480px;
-				margin-bottom:20px;
-				border-bottom-width: 1px;
 
 				#headline {
 					bottom: 4%;
@@ -539,15 +528,15 @@ body {
 					padding: 3.44%;
 					background-color:transparent;
 					box-shadow:none;
-		
+
 					h1 {
 						font-size: 17px;
 						color:white;
 						font-weight: 400;
 					}
-		
+
 					h2 {
-						font-size: 13px;
+						font-size: 12px;
 						font-weight: 300;
 						white-space: normal;
 						color:white;
@@ -560,10 +549,10 @@ body {
 			}
 		}
 
-		
+
 	}
 
-	#articles { 
+	#articles {
 
 		#lonely-planet {
 			width: 100%;
@@ -572,7 +561,7 @@ body {
 
 		#marie-claire, #tour-cert, #bunnys {
 			display: none;
-		} 
+		}
 	}
 
 	#description .item {
@@ -620,6 +609,7 @@ body {
 
 			.room-images {
 				width:100%;
+				max-height: 480px !important;
 
 			}
 
@@ -668,15 +658,18 @@ body {
 @media screen and (min-width: 768px) {
 
 	#hero {
-		height: 580px;
+		height: 780px;
 
 		#overlay {background: rgba(0,0,0,0.3);}
 
 		#headline {
-			top: 36%;
+			top: 69%;
 			width: 480px;
-			left: 10%;
-			padding: 3.14%;
+			left: 0;
+			right:0;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 2.44%;
 
 			h1 {
 				font-size: 23px;
