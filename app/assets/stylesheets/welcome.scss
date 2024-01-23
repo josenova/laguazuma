@@ -238,6 +238,8 @@
 
 		& > .wrapper { padding-top: 5.5%; padding-bottom: 2.12%; }
 
+		ul { display: inline-block; }
+
 		h2 {
 
 		    margin-bottom: 0;
@@ -344,7 +346,7 @@
 			height:60px;
 			background: #fff;
 			position: relative;
-
+			display: block !important;
 
 			li {
 		       	display: block;
@@ -678,7 +680,7 @@ body {
 		#overlay {background: rgba(0,0,0,0.3);}
 
 		#headline {
-			top: 69%;
+			top: 61%;
 			width: 480px;
 			left: 0;
 			right:0;

@@ -23,6 +23,10 @@
 	font-family: 'Open Sans';
 }
 
+html {
+	scroll-behavior: smooth
+}
+
 body {
 	background:image-url('white-waves.png') repeat;
 }
@@ -137,6 +141,25 @@ header {
 header.fixed {
 	position:relative;
 	background:image-url('blue-waves.png') repeat;
+}
+
+#whatsapp {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 9999;
+
+	a {
+	background:image-url('whatsapp.png') center no-repeat white;
+	background-size: 50%;
+	width: 70px;
+	height: 70px;
+	border-width: 1px;
+	border-color: black;
+	display: block;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	border-radius: 35px;
+	}
 }
 
 
