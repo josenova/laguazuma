@@ -1,4 +1,4 @@
-- meta description: "El Paraíso is an ecolodge getaway with ocean-view overlooking Samana Bay. It's truly a unique way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
+- meta description: "El Paraíso is a top rated ecolodge getaway with amazing ocean views. It's truly a unique way to experience the Dominican Republic and its natural beauty.", keywords: %w(ecolodge bungalow samana las galeras guazuma dominican republic villa paraiso rent room airbnb travel vacations republica dominicana paradise las terrenas house)
 
 #hero
   #overlay
@@ -8,7 +8,7 @@
         %h1 Ocean view rooms for rent
         %h2
           /= image_tag 'icons/geo.png', alt: 'Las Galeras, Samana'
-          Rated best airbnb in Dominican Republic
+          Top rated airbnb in Dominican Republic
         = link_to 'See the rooms', "#rooms", id: 'cta'
   -#
     %button.w3-button.w3-display-left{ :onclick=> "plusDivs(-1)" }
@@ -36,18 +36,18 @@
 
       .item
         .item-image.right
-          = link_to image_tag("thumbnails/pool.jpg", alt: 'The pool with ocean-view.'), asset_path("pool.jpg")
+          = link_to image_tag("immerse-yourself.jpg", alt: 'The pool with ocean-view.'), asset_path("immerse-yourself.jpg")
         .item-description
           %h3.item-title Immerse yourself in nature
           %p.item-text Constructed from local materials that blend into the surrounding ecosystem, its a place where you can immerse yourself in nature, find tranquility and connect with your inner self and your beloved ones.
 
   #strip
 
-    = link_to image_tag("thumbnails/living-room-entrance.jpg", alt: 'Living room entrance.'), asset_path("living-room-entrance.jpg"), class: 'thumbnail'
-    = link_to image_tag("thumbnails/dinner-table.jpg", alt: 'Dinner table.'), asset_path('dinner-table.jpg'), class: 'thumbnail'
-    = link_to image_tag("thumbnails/pool-pov.jpg", alt: 'Pool.'), asset_path('pool-pov.jpg'), class: 'thumbnail'
-    = link_to image_tag("thumbnails/poolside-bar.jpg", alt: 'Poolside bar.'), asset_path('poolside-bar.jpg'), class: 'thumbnail'
-    = link_to image_tag("thumbnails/poolside-area.jpg", alt: 'Poolside area.'), asset_path('poolside-area.jpg'), class: 'thumbnail'
+    = link_to image_tag("thumbnails/deck.jpg", alt: 'Deck area.'), asset_path("deck.jpg"), class: 'thumbnail'
+    = link_to image_tag("thumbnails/pool-view.jpg", alt: 'Pool sunset view.'), asset_path('pool-view.jpg'), class: 'thumbnail'
+    = link_to image_tag("thumbnails/sunbed.jpg", alt: 'Sun bed.'), asset_path('sunbed.jpg'), class: 'thumbnail'
+    = link_to image_tag("thumbnails/social-area.jpg", alt: 'Social area.'), asset_path('social-area.jpg'), class: 'thumbnail'
+    = link_to image_tag("thumbnails/hosts.jpg", alt: 'Hosts: Nora & Jose.'), asset_path('hosts.jpg'), class: 'thumbnail'
 
   #rooms
     .wrapper

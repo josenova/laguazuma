@@ -15,7 +15,7 @@
 
 </head>
 <body>
-  <header>
+  <header class=<%= "fixed" if !current_page?(root_path) %>>
     <nav>
       <label for="hamburger">&#9776; Menu</label>
       <input type="checkbox" id="hamburger"/>
@@ -23,7 +23,7 @@
     <ul>
       <li><%= link_to 'Home', root_path, class: current_class?(root_path) %></li>
       <li><%= link_to 'Gallery', gallery_path, class: current_class?(gallery_path) %></li>
-      <li><%= link_to 'Chef Mirko', chef_path, class: current_class?(chef_path) %></li> 
+      <li><%= link_to 'Chef Mirko', chef_path, class: current_class?(chef_path) %></li>
       <li><%= link_to 'Location', location_path, class: current_class?(location_path) %></li>
     </div>
     </nav>

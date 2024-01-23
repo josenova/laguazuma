@@ -134,6 +134,12 @@ header {
 	}
 }
 
+header.fixed {
+	position:relative;
+	background:image-url('blue-waves.png') repeat;
+}
+
+
 /******************************************** SMALL SCREEN ****************************************/
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
