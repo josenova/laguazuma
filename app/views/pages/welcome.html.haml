@@ -2,25 +2,14 @@
 
 #hero
   #overlay
-    #superhost
     .slide.first
+      /= image_tag "rooms/5/2.jpg", alt: 'Room view', rel: "preload"
       #headline
         %h1 Ocean view rooms for rent
         %h2
           /= image_tag 'icons/geo.png', alt: 'Las Galeras, Samana'
           Top rated airbnb in Dominican Republic
         = link_to 'See the rooms', "#rooms", id: 'cta'
-  -#
-    %button.w3-button.w3-display-left{ :onclick=> "plusDivs(-1)" }
-      &#10094;
-    %button.w3-button.w3-display-right{ :onclick=> "plusDivs(+1)"}
-      &#10095;
-
-
-#articles
-  = link_to '', 'https://www.lonelyplanet.com/dominican-republic/peninsula-de-samana/las-galeras/hotels/casa-el-paraiso/a/poi-sle/1559342/358033', id: 'lonely-planet', target: "_blank"
-
-  = link_to '', 'https://www.tourcert.org/en/services/check/', id: 'tour-cert', target: "_blank"
 
 #content
 
@@ -115,11 +104,4 @@
     /%li Dominican Cook
     /%li Catamaran Excursion
     /%li Dinner by Chef Mirko
-
-  #media
-    .wrapper
-      /%h2 Media
-      /%iframe{:width => "100%", :height => "500", :src=> "https://www.youtube.com/embed/1oi4DoBWpTw", :frameborder=> "0", :allow=> "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"}
-      /%p Credit: <a href="https://www.hoppingaroundtheglobeinstyle.com" target="_blank">https://www.hoppingaroundtheglobeinstyle.com</a>
-
 

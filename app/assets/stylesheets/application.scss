@@ -29,6 +29,8 @@ html {
 
 body {
 	background:image-url('white-waves.png') repeat;
+	max-width: 1800px;
+	margin: 0 auto;
 }
 
 h1 {
@@ -80,7 +82,7 @@ nav {
 		label {
 			display: none;
 			color: white;
-			font-size:1.2em;
+			font-size:1em;
 			border: 1px solid white;
 			padding: 0 10px;
 			text-decoration: none;
@@ -195,6 +197,7 @@ header.fixed {
 							text-align:center;
 							width:100%;
 							display: block;
+							background-color: rgba(0,0,0,0.7);
 						}
 
 					}
